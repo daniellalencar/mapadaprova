@@ -49,8 +49,26 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Majors", majors_path  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
+            <li><%= link_to "Edital", editals_path  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
+          </ul>
+            <ul class="nav navbar-right col-md-4">
+            <% if current_user %>
+              <li class="col-md-8 user-name">
+                <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe,
+                edit_user_registration_path, title: 'Edit Profile' %>
+              </li>
+              <li class="col-md-1">
+              </li>
+              <li class="col-md-3 logout">
+                  <%= link_to('Sair', destroy_user_session_path,
+                class: 'btn btn-primary', title: 'Logout', :method => :delete) %>
+              </li>
+              <% else %>
+              <li class="col-md-4 pull-right">
+                <%= link_to('Logar', new_user_session_path, class: 'btn btn-primary', title: 'Logar') %>
+              </li>
+            <% end %>
           </ul>
         </div>
       </div>

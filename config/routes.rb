@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  resources :majors
-  devise_for :users
+   resources :majors
+   resources :editals
+   devise_for :users
   #devise_for :models
    root 'welcome#index'
+   get '/material-de-concursos/' => 'editals#qualquer', as: 'materia_qualquer'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
