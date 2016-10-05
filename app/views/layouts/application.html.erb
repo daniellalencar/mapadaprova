@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Mapadaprova" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Site" %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -37,67 +37,171 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="<%=root_path%>">Mapadaprova</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Majors", majors_path  %></li>
-            <li><%= link_to "Edital", editals_path  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
-          </ul>
-            <ul class="nav navbar-right col-md-4">
-            <% if current_user %>
-              <li class="col-md-8 user-name">
-                <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe,
-                edit_user_registration_path, title: 'Edit Profile' %>
-              </li>
-              <li class="col-md-1">
-              </li>
-              <li class="col-md-3 logout">
-                  <%= link_to('Sair', destroy_user_session_path,
-                class: 'btn btn-primary', title: 'Logout', :method => :delete) %>
-              </li>
-              <% else %>
-              <li class="col-md-4 pull-right">
-                <%= link_to('Logar', new_user_session_path, class: 'btn btn-primary', title: 'Logar') %>
-              </li>
-            <% end %>
-          </ul>
+    <header class="header_area">
+      <div class="row m0 header_top">
+        <div class="container">
+          <div class="row header_top_inner">
+            <div class="col-lg-6 col-md-5 header_left"></div>
+            <div class="col-lg-6 col-md-7 header_right">
+              <div class="course_info">
+                <a href="#"><i class="mdi mdi-arrow-right"></i><span>Apply Now For Join New Course</span></a>
+                <button class="selected">Register</button>
+                <button>Sign in</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="row m0 header_bottom">
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="<%=root_path%>"><img src="img/logo/logo.png" alt=""></a>
+            </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <%= bootstrap_flash %>
-          <%= yield %>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="main_menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="<%=root_path%>">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="course_single.html">Course Single</a></li>
+                  </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="teacher.html">Teachers</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <%= bootstrap_flash %>
+    <%= yield %>
+    <footer class="row">
+        <div class="row m0 footer_top">
+            <div class="container">
+                <div class="row footer_sidebar">
+                    <div class="col-md-3 widget widget1">
+                        <img src="img/footer/logo.png" alt="">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <a href="#">Read more...</a></p>
+                        <div class="widget_title">
+                            <h6>Our Payment Partner</h6>
+                        </div>
+                        <div class="widget_inner">
+                            <img src="img/footer/1.jpg" alt="#">
+                            <img src="img/footer/2.jpg" alt="#">
+                            <img src="img/footer/3.jpg" alt="#">
+                            <img src="img/footer/4.jpg" alt="#">
+                            <img src="img/footer/5.jpg" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-md-3 widget widget2">
+                        <div class="widget_title">
+                            <h6>Courses Short Link</h6>
+                        </div>
+                        <div class="widget_inner">
+                            <ul class="nav">
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>CSS Code</span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>Photoshop</span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>PSD Expart</span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>HTML Coding </span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>HTML</span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>JAVA Script </span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>Wordpress</span></a></li>
+                            </ul>
+                            <ul class="nav">
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>Joomla</span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>Deshboard</span></a></li>
+                                <li><a href="#"><i class="mdi mdi-menu-right"></i><span>Muse Design</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 widget widget3">
+                        <div class="widget_title">
+                            <h6>Popular short Tags</h6>
+                        </div>
+                        <div class="widget_inner">
+                            <button>css</button>
+                            <button>photoshop</button>
+                            <button>psd</button>
+                            <button>html</button>
+                            <button>java script</button>
+                            <button>joomla</button>
+                            <button>educations</button>
+                            <button>art</button>
+                            <button>professions</button>
+                            <button>law</button>
+                            <button>html</button>
+                            <button>psd</button>
+                            <button>css</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 widget widget4">
+                        <div class="widget_title widget_details">
+                            <h6>New Posts</h6>
+                        </div>
+                        <div class="widget_inner">
+                            <div class="new_post">
+                                <div class="media item">
+                                    <div class="media-left item_left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/footer/11.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="media-body item_body">
+                                        <h5>How Create Material Design </h5>
+                                        <a href="#"><i class="mdi mdi-timelapse"></i><span>Jun 5, 2016 10:50 am</span></a>
+                                    </div>
+                                </div>
+                                <div class="media item">
+                                    <div class="media-left item_left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/footer/12.jpg" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="media-body item_body">
+                                        <h5>UI Kit Design Concept</h5>
+                                        <a href="#"><i class="mdi mdi-timelapse"></i><span>Jun 15, 2016 11:00 am</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_title pt40">
+                            <h6>Follow</h6>
+                        </div>
+                        <div class="widget_inner social_icon">
+                            <ul class="nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3">
-          <div class="well sidebar-nav">
-            <h3>Sidebar</h3>
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
-
-      <footer>
-        <p>&copy; Company 2016</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+        <div class="row m0 footer_bottom_area">
+            <div class="container">
+                <div class="footer_bottom">
+                    <p><a href="#">Site</a> - Copyright &copy; 2016 Content. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
