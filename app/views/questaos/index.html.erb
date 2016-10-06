@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Questaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @questaos.each do |questao| %>
+      <tr>
+        <td><%= questao.enunciado %></td>
+        <td><%= link_to 'Show', questao %></td>
+        <td><%= link_to 'Edit', edit_questao_path(questao) %></td>
+        <td><%= link_to 'Destroy', questao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Questao', new_questao_path %>

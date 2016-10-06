@@ -1,0 +1,623 @@
+@media (max-width: 1750px){
+    .course_timing_area .container:before{
+        display: none;
+    }
+}
+
+@media (max-width: 1500px){
+    /* Contact */
+    .contact_area .contact_bottom .newsletter .newsletter_inner .newsletter_left_area i{
+        left: 0;
+    }
+    
+    /* About Pathagar */
+    .about_pathagar_area .about_pathagar .media .media-body .section_title_left{
+        padding: 80px 0 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    
+    /* About Pathagar */
+    .about_pathagar_area .about_pathagar .media .media-left{
+        display: block;
+        text-align: center;
+        padding-right: 0;
+    }
+    .about_pathagar_area .about_pathagar .media .media-left a img{
+        display: inline-block;
+    }
+    .about_pathagar_area .about_pathagar .media .media-body{
+        max-width: 100%;
+        text-align: center;
+        padding: 0 30px 60px;
+    }
+    
+    /* Contact */
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item a .panel_title:before{
+        right: 15px;
+    }
+    .contact_area .contact_bottom .newsletter .newsletter_inner .newsletter_right_area .input-group input{
+        display: inline-block;
+        width: 80%;
+    }
+    .contact_area .contact_bottom .newsletter .newsletter_inner .newsletter_right_area .input-group span{
+        display: inline-block;
+        width: 20%;
+    }
+    .contact_form_area .contact_form .form-inline input:nth-child(2n+1){
+        margin-right: 20px;
+    }
+    .contact_form_area .contact_form .form-inline input{
+        width: calc(50% - 10px);
+        height: 55px;
+    }
+    
+    /* Course Area */
+    .course_area .course_inner .course_item .item .item_body{
+        padding: 25px 20px 0 20px;
+    }
+    .course_area .course_inner .course_item .item .item_body .media-heading{
+        margin: 0;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .course_area .course_inner .course_item .item .item_body ul li{
+        margin-right: 14px;
+    }
+    .course_area .course_inner .course_item .item .item_body p{
+        margin: 0;
+        padding-top: 15px;
+        line-height: 21px;
+    }
+    
+    /* Course Single */
+    .course2_area .course_inner .course_single .course_describe img{
+        width: 100%;
+    }
+    
+    /* Events Area */
+    .events_area .events_slider .single_event .item_inner .event_left{
+        width: 50%;
+    }
+    .events_area .events_slider .single_event .item_inner .event_right{
+        width: 50%;
+    }
+    .events_area .events_slider .single_event .item_inner .event_right .slider_content h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .events_area .events_slider .single_event .item_inner .event_right .slider_content .post_details{
+        margin: 0;
+    }
+    
+    .events_area .events_slider .single_event .item_inner .event_left, .events_area .event_page .single_event .item_inner .event_left{
+        display: block;
+        overflow: hidden;
+    }
+    .events_area .event_page .single_event .item_inner .event_right .slider_content{
+        padding: 20px 0 0;
+    }
+    
+    /* Find Course */
+    .find_course_area .find_course .find_course_inner .search_area .bootstrap-select .btn-info{
+        width: 100%;
+    }
+    .find_course_area .find_course .find_course_inner .search_area button{
+        width: 100%;
+    }
+    
+    /* Header Area */
+    .header_area .header_bottom .main_menu ul li a{
+        padding: 0 17px;
+    }
+    .header_area .banner_area .banner_inner .banner_content h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header_area .banner_area .banner_inner .banner_content a{
+        padding: 15px 50px;
+    }
+    
+    /* News */
+    .news_area .news_inner .member_area .member .member_img img{
+        width: 100%;
+    }
+    
+    /* Registration Area */
+    .registration_area .registration_content .registration_now h2{
+        font-size: 30px;
+    }
+    .registration_area .registration_slid > h2{
+        font-size: 24px;
+    }
+    
+    /* Teacher */
+    .teacher_page .container .teacher_section .modal .modal-dialog{
+        width: 850px;
+        margin: 80px auto;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body{
+        padding: 50px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill .progress{
+        width: 300px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill .progress .progress-bar:before{
+        right: 54px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill .progress .progress-bar span{
+        right: 0;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_image{
+        margin: 0 40px 0 0;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill{
+        margin: 25px 0;
+    }
+    .teacher_area .teacher_slider .single_teacher .teacher_image .teacher_hover_content p{
+        padding: 0 20px;
+    }
+    .teacher_area .teacher_slider .single_teacher .teacher_image .teacher_hover_content i{
+        padding-top: calc(50% - 40px);
+    }
+    
+    /* Why Choose */
+    .why_choose_area .why_choose .why_choose_left .img_part img{
+        bottom: -4px;
+        transform: scale(0.8,0.8);
+    }
+    
+}
+@media (max-width: 991px) {
+    
+    /* Contact */
+    .contact_area .contact_top .contact_top_inner .contact_left .office_address{
+        padding: 50px 0 0;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_left .office_address .single_address{
+        padding-bottom: 50px;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item a .panel_title:before{
+        right: 30px;
+    }
+    .contact_area .contact_bottom .newsletter .newsletter_inner .newsletter_left_area{
+        padding-bottom: 30px;
+    }
+    .contact_area .contact_bottom img{
+        width: 80%;
+        bottom: 250px;
+    }
+    .contact_area .contact_bottom{
+        margin: 30% 0 0;
+    }
+    .contact3_area .contact_bottom{
+        margin: 0;
+    }
+    
+    /* Course Area */
+    .course_area .course_inner .course_item{
+        padding: 0 0 30px;
+    }
+    
+    /* Events Area */
+    .events_area .events_slider .single_event .item_inner .event_left{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    .events_area .events_slider .single_event .item_inner .event_right{
+        width: 100%;
+        padding: 40px 0 0;
+    }
+    
+    /* find Course */
+    .find_course_area .find_course .find_course_inner .search_area .bootstrap-select {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Header */
+    .header_area .header_top .header_top_inner .header_left{
+        display: block;
+        overflow: hidden;
+    }
+    .home_two .header_top .header_social{
+        margin: 0;
+        display: block;
+        padding-bottom: 20px;
+    }
+    .header_area .header_bottom .main_menu ul li a{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .home_two .header_top .header_social a i{
+        font-size: 20px;
+        padding: 0 12px;
+    }
+    .home_two .home_two_bottom .banner_area .slider_image img{
+        width: 100%;
+    }
+    .course_timing_area .container .course_timing_select{
+        float: left;
+    }
+    
+    /* News */
+    .news_area .news_inner .member_area .member .member_img{
+        display: inline-block;
+    }
+    .news_area .news_inner .member_area .member .member_info h4{
+        max-width: 100%;
+    }
+    .news_area .news_inner .member_area .member{
+        padding-bottom: 30px;
+    }
+    
+    /* Popular Course */
+    .popular_course_area .popular_course_inner .single_course{
+        padding-bottom: 30px;
+    }
+    
+    /* Pricing Table*/
+    .pricing_table .pricing_table_inner .item .basic_package{
+        margin-bottom: 30px;
+    }
+    
+    /* Project Area */
+    .project_area .single_project .project_image{
+        display: block;
+        overflow: hidden;
+    }
+    .project_area .single_project{
+        padding: 70px 0 0;
+    }
+    
+    /* Registration */
+    .registration_area .registration_slider .single_registration_slider{
+        padding: 0 15px;
+    }
+    .registration_area .registration_content .registration_now p{
+        text-align: center;
+    }
+    
+    /* Teacher */
+    .teacher_page .container .teacher_section .modal .modal-dialog{
+        width: 650px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_image{
+        margin: 0;
+        display: block;
+        float: none;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content{
+        text-align: center;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill .progress{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill .progress .progress-bar:before{
+        display: none;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill .progress .progress-bar span{
+        display: none;
+    }
+    .teacher_area{
+        padding: 50px 0;
+    }
+    
+    /* Our Support */
+    .our_support_area .our_support .item_area{
+        padding: 0 15px 30px;
+    }
+    
+    /* Why Choose */
+    .why_choose_area .why_choose .why_choose_right{
+        padding: 30px 15px 0;
+    }
+}
+
+@media (min-width: 767px) {
+    header .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:hover .dropdown-menu, header .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:focus .dropdown-menu {
+        opacity: 1;
+        top: 100%;
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
+}
+@media (max-width: 767px) {
+    
+    /* Contact  */
+    .contact_area .contact_bottom .newsletter .newsletter_inner .newsletter_left_area h2{
+        font-size: 22px;
+    }
+    .contact_form_area .contact_form .form-inline input:nth-child(2n+1){
+        margin-right: 0;
+    }
+    .contact_form_area .contact_form .form-inline input{
+        width: calc(100% - 30px);
+        height: 45px;
+        margin: 0 15px 20px;
+    }
+    .contact_form_area .contact_form .form-inline textarea{
+        width: calc(100% - 30px);
+        margin: 0 15px 20px;
+    }
+    .contact_form_area .contact_form h3{
+        text-align: center;
+    }
+    .contact_form_area .contact_form .form-inline a{
+        padding: 15px 40px;
+    }
+    .contact2_area .contact2_inner h3{
+        text-align: center;
+    }
+    
+    /* Course */
+    .course_area .course_inner .course_item .item .item_left{
+        display: block;
+    }
+    .course2_area .course_inner .course_left .course_item .item .item_body{
+        padding: 30px 0 0;
+        border: 0;
+    }
+    .course2_area .course_inner .course_left .course_item .item{
+        margin-top: 50px;
+    }
+    .course2_area .course_inner .course_right{
+        padding: 0 15px;
+    }
+    .course_area .course_inner .course_item .item .item_body{
+        padding: 25px 0;
+        border: 0;
+    }
+    .course_area .course_inner .course_item:nth-child(2n), .course_area .course_inner .course_item:nth-child(2n+1){
+        padding: 0 15px 30px;
+    }
+    
+    /* Header */
+    .header_area .header_bottom .main_menu ul li{
+        float: none !important;
+        text-align: center;
+    }
+    .header_area .header_bottom .main_menu ul li a{
+        font-size: 18px;
+        padding: 0;
+        line-height: 4;
+    }
+    .header_area .header_bottom .main_menu ul li.dropdown ul.dropdown-menu{
+        visibility: visible;
+        opacity: 1;
+    }
+    .header_area .header_bottom .main_menu ul li.dropdown ul.dropdown-menu{
+        left: -300px;
+    }
+    
+    /* Project */
+    .project_area .single_project{
+        display: inline-block;
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    .project_area .single_project .project_image{
+        display: inline-block;
+    }
+    .project_area .single_project .project_image i{
+        margin: 0;
+    }
+    .project_area .single_project h2:before{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .project_area .single_project h2{
+        font-size: 30px;
+    }
+    .project_area .single_project p{
+        font-size: 22px;
+    }
+    .project_area .single_project.selected{
+        width: 100%;
+        display: block;
+        padding: 50px 0;
+    }
+    .project_area .single_project.selected .project_image{
+        display: block;
+    }
+    .project_area .single_project.selected h2{
+        margin: 20px 0 0;
+    }
+    .project_area .single_project{
+        padding: 40px 0;
+    }
+    .project_area .media{
+        margin: 0;
+    }
+    
+    /* Registration area */
+    .registration_area .registration_slid{
+        padding: 0 20px;
+    }
+    
+    /* Teacher */
+    .teacher_page .container .teacher_section .modal .modal-dialog{
+        width: auto;
+        margin: 80px 50px;
+    }
+    .teacher_area .teacher_slider .single_teacher .teacher_image .teacher_hover_content p{
+        padding: 0 15px;
+    }
+    
+}
+@media (max-width: 580px) {
+    
+    /* About Pathagar */
+    .about_pathagar_area .about_pathagar .media .media-left a img{
+        width: 100%;
+    }
+    
+    /* Contact */
+    .contact_area .contact_bottom img{
+        display: none;
+    }
+    .contact_area .contact_bottom{
+        margin: 0;
+    }
+    
+    /* Events Area */
+    .events_area .events_slider .single_event .item_inner .event_left .date h2{
+        font-size: 30px;
+    }
+    .events_area .events_slider .single_event .item_inner .event_left .date p{
+        font-size: 14px;
+    }
+    .events_area .events_slider .single_event .item_inner .event_left .date{
+        padding: 68px 0;
+    }
+    
+    /* Header Area */
+    .header_area .header_top .header_top_inner .header_right .course_info a{
+        display: block;
+        overflow: hidden;
+    }
+    .header_area .header_top .header_top_inner .header_right .course_info button{
+        float: left;
+        margin: 10px 20px 0 0;
+    }
+    .header_area .header_top .header_top_inner .header_right .course_info button.selected{
+        margin: 10px 20px 0 0;
+    }
+    
+    /* Teacher */
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_image img{
+        width: 100%;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body{
+        padding: 20px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content h2{
+        margin: 20px 0 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content .modal_skill{
+        margin: 10px 0 25px;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body .modal_content h3{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    /* what say */
+    .registration_area .registration_slid > h2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    
+    /* Contact */
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose{
+        padding-top: 50px;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item a .panel_title{
+        padding: 0;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item a .panel_title h4{
+        padding: 15px 0;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item .panel-collapse .panel-body{
+        padding: 15px 0 0;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item .panel-collapse .panel-body p{
+        padding: 10px 0;
+    }
+    .contact_area .contact_top .contact_top_inner .contact_right .why_choose .single_item a .panel_title:before{
+        right: 0;
+    }
+    
+    /* Course Area */
+    .course_area .course_inner .course_item .item .item_left{
+        display: block;
+    }
+    .course_area .course_inner .course_item .item .item_body{
+        padding: 25px 20px 0 0;
+        border: 0;
+    }
+    .course_area .course_inner .course_item .item .item_left a{
+        display: inline-block;
+    }
+    
+    /* Events Area */
+    .events_area .events_slider .single_event .item_inner .event_left .img_part{
+        display: block;
+        float: none;
+    }
+    .events_area .events_slider .single_event .item_inner .event_left .date{
+        width: 293px;
+        padding: 10px 0;
+    }
+    .event_page_area .event_page .date_p{
+        width: 220px;
+        padding: 40px 0;
+        display: block;
+        overflow: hidden;
+        float: none;
+    }
+    .events_area .section_title .title_border .icon_side:after{
+        width: 220px;
+    }
+    
+    /* Header Area */
+    .home_two .header_top .header_social a i{
+        padding: 0 8px;
+    }
+    .header_area .banner_area .banner_inner .banner_content h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    /* Section Title */
+    .section_title h2{
+        font-size: 18px;
+    }
+    .section_title_left h2{
+        font-size: 22px;
+    }
+    .section_title .title_border .icon_side:before{
+        width: 400%;
+    }
+    .section_title .title_border .icon_side:after{
+        width: 400%;
+    }
+    
+    /* Teacher Area */
+    .teacher_area .teacher_section .single_teacher{
+        width: 100%;
+        display: block;
+    }
+    .teacher_area .teacher_section .single_teacher .teacher_image .teacher_social a{
+        padding: 12px 0;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog{
+        margin: 80px 0;
+    }
+    .teacher_page .container .teacher_section .modal .modal-dialog .modal-content .modal-body{
+        padding: 0;
+    }
+    
+    /* What Say */
+    .registration_area .registration_slider .owl-controls{
+        top: -50px;
+    }
+    
+    /* Why Choose */
+    .why_choose_area{
+        padding: 30px 0 0;
+    }
+    .why_choose_area .why_choose .why_choose_left .img_part{
+        display: none;
+    }
+    
+}

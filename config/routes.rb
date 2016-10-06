@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
    resources :majors
    resources :editals
+   resources :questaos
+
    devise_for :users
   #devise_for :models
    root 'welcome#index'
