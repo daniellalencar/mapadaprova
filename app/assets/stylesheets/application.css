@@ -520,7 +520,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 /*--------------------------------------------------*/
 .find_course_area {
   padding: 80px 0;
-  background: url(../img/find_course/1.jpg) no-repeat scroll center;
+  background: url(../images/find_course/1.jpg) no-repeat scroll center;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
@@ -1426,7 +1426,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .header_area .header_bottom .main_menu ul li a:before {
   content: "";
-  background: url(../img/menu/icon.png) no-repeat scroll 0 0;
+  background: url(../images/menu/icon.png) no-repeat scroll 0 0;
   width: 16px;
   position: absolute;
   opacity: 0;
@@ -1476,7 +1476,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   color: #0cbdaa;
 }
 .header_area .banner_area {
-  background: url(../img/slider.jpg) no-repeat scroll 0 0;
+  background: url(<%=image_path('slider.jpg')%>) no-repeat scroll 0 0;
   position: relative;
   background-size: cover;
 }
@@ -1514,7 +1514,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 
 .header_area.demo_three .video_area {
-  background: url(../img/slider/slider_03.jpg) no-repeat scroll center;
+  background: url(../images/slider/slider_03.jpg) no-repeat scroll center;
   position: relative;
   background-size: cover;
 }
@@ -1583,7 +1583,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   position: absolute;
   top: 0px;
   left: 0;
-  background: url(../img/slider/pattern4.png);
+  background: url(../images/slider/pattern4.png);
   width: 100%;
   height: 100%;
   opacity: 0.70;
@@ -1600,7 +1600,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 
 .home_two {
-  background: url(../img/banner/bg_02.jpg) no-repeat scroll 0 0;
+  background: url(../images/banner/bg_02.jpg) no-repeat scroll 0 0;
   background-size: cover;
 }
 .home_two .header_top {
@@ -1681,7 +1681,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   background: none;
 }
 .page_header_area .page_header {
-  background: url(../img/banner/bg_03.jpg) no-repeat fixed;
+  background: url(../images/banner/bg_03.jpg) no-repeat fixed;
   background-size: cover;
 }
 .page_header_area .page_header .header_bottom {
@@ -1797,7 +1797,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .course_timing_area .container:before {
   content: "";
-  background: url(../img/clock.png) no-repeat scroll 0 0;
+  background: url(../images/clock.png) no-repeat scroll 0 0;
   width: 260px;
   position: absolute;
   height: 260px;
@@ -1884,7 +1884,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 
 /*--------------------------------------------------*/
 .project_area {
-  background: url(../img/project_bg.jpg) no-repeat scroll center;
+  background: url(../images/project_bg.jpg) no-repeat scroll center;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -1933,7 +1933,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   margin-top: 0;
 }
 .project_area .single_project.selected {
-  background: url(../img/project_middle.jpg) no-repeat scroll 0 0;
+  background: url(../images/project_middle.jpg) no-repeat scroll 0 0;
   text-align: center;
   padding: 160px 0 130px;
   position: relative;
@@ -2731,7 +2731,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   color: #fafafa;
 }
 .events_area .event_side_bar .sidebar_add {
-  background: url(../img/event/banner.jpg) no-repeat scroll 0 0;
+  background: url(../images/event/banner.jpg) no-repeat scroll 0 0;
   position: relative;
   text-align: center;
   z-index: 1;
